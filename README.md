@@ -15,3 +15,8 @@ token bucket算法。
 token bucket： https://zhuanlan.zhihu.com/p/20872901?hmsr=toutiao.io&utm_medium=toutiao.io&utm_source=toutiao.io&from=timeline&isappinstalled=0）。
 openresty：https://github.com/openresty/lua-nginx-module
 
+对比：
+使用php完成同样功能，使用http_load测试：http_load -parallel 50 -seconds 30。
+php（opcode关闭） qps：935
+php（opcode打开） qps：1265.9
+openresty qps：2193.97
